@@ -1,0 +1,25 @@
+@import 'tailwind.css';
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-white;
+  }
+  html.dark {
+    @apply text-neutral-50;
+    @apply bg-neutral-700;
+  }
+}
+
+#root {
+  flex-direction: column; /* Stack its children vertically */
+  min-height: 100vh; 
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
